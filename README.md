@@ -9,30 +9,30 @@ The dataset used contains over 1 million tweets.
 Research questions:
 - **RQ1.** Does the sentiment of the tweets (positive, neutral or negative) have an impact in the retweetability and number of followers?
 - **RQ2.** The sentiment of the tweets are somehow related with the day of the weeks (ex Monday vs Friday)?
-- **RQ3.** Do other features of the text like the topic (sports or politics) impact on retweetability?
+- **RQ3.** Do other features of the text like the topic (e.g., sports or politics) impact on retweetability?
 
 Proposed datasets:
 Inflated tweets from EgoTimelines.txt will have the text information, and EgoTimelines.txt contains retweets and further information.
 
 Methods:
-- Data collection: We are going to inflate the tweet_ids from EgoTimelines.txt to extract tweets text using [a Twitter API](https://github.com/DocNow/hydrator).
-- Sentiment Analysis: We will implement a SOTA Sentiment Analysis model for social media.
+- Data collection: We are going to inflate the tweet_ids from EgoTimelines.txt to extract tweets text using [Twitter APIs](https://github.com/DocNow/hydrator).
+- Sentiment Analysis: We will implement a Sentiment Analysis model based on BERT ([Devlin et al., 2018](https://arxiv.org/abs/1810.04805)) and compare it against rule-based models ([Hutto et al., 2014](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf))
 - Topic extraction: We will extract tweets of politics and sports with the most popular hashtags of both categories and a list of keywords.
 
 Proposed timeline:
-- 1st week: Sentiment and topic extraction
-- 2nd week: Correlation between features (sentiment and topic) and retweetability. Ploting figures
-- 3rd week: Report and wrap-up
+- Week 1: Sentiment and topic extraction
+- Week 2: Investigating the correlation between extracted features (sentiment and topic) and retweetability. Ploting figures
+- Week 3: Report and wrap-up
 - Deadline: 18th Dec
 
 Organization within the team:
 
-| Team member | Research Question | Task                                                                 |
-|-------------|-------------------|----------------------------------------------------------------------|
-| Mattia      | RQ1               | Implementing SOTA sentiment analysis model                           |
-| Cameron     | RQ1, RQ2          | Analyzing data and correlation of sentiment, time and retweetability |
-| Laura       | RQ1, RQ2          | Analyzing data and correlation of sentiment, time and retweetability |
-| Marcel      | RQ3               | Extracting tweets by topic (sports/politics), and analyzing them     |
+| Team member | Research Question | Task                                                                                    |
+|-------------|-------------------|-----------------------------------------------------------------------------------------|
+| Mattia      | RQ1, RQ2          | Implementing sentiment analysis model and investigating correlation with other features |
+| Cameron     | RQ1, RQ2          | Analyzing data and correlation of sentiment, time and retweetability                    |
+| Laura       | RQ1, RQ2          | Analyzing data and correlation of sentiment, time and retweetability                    |
+| Marcel      | RQ3               | Extracting tweets by topic (sports/politics), and analyzing them                        |
 
 Questions for TAs (optional):
 
