@@ -16,7 +16,7 @@ Inflated tweets from EgoTimelines.txt will have the text information, and EgoTim
 
 Methods:
 - Data collection: We are going to inflate the tweet_ids from EgoTimelines.txt to extract tweets text using [Twitter APIs](https://github.com/DocNow/hydrator).
-- Sentiment Analysis: We will implement a Sentiment Analysis model based on contextual language models like BERT ([Devlin et al., 2018](https://arxiv.org/abs/1810.04805)) and compare it against rule-based models ([Hutto et al., 2014](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf))
+- Sentiment Analysis: We will implement a Sentiment Analysis model based on contextual language models like BERT ([Devlin et al., 2019](https://arxiv.org/abs/1810.04805)) and compare it against rule-based models ([Hutto et al., 2014](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf))
 - Topic extraction: We will extract tweets of politics and sports with the most popular hashtags of both categories and a list of keywords.
 
 Proposed timeline:
