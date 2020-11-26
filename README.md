@@ -3,7 +3,7 @@ Title: Analysis of retweetability given its sentiment and topic
 Abstract:
 Users can spread information in Twitter either by crafting new tweets or by using retweet mechanism to re-post the previously created tweets.
 We want to know what makes a post retweetable, therefore we will analyze characteristics of a tweet such as its sentiment and its topic.
-The sentiment will be extracted via a SOTA sentiment analysis model. Also, sport tweets retweetability will be compared to the one of politics tweets.
+The sentiment will be extracted via a sentiment analysis model. Also, sport tweets retweetability will be compared to the one of politics tweets.
 The dataset used contains over 1 million tweets.
 
 Research questions:
