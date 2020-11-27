@@ -19,7 +19,7 @@ Methods:
 - Sentiment Analysis: We will implement a Sentiment Analysis approach based on contextual language models like BERT ([Devlin et al., 2019](https://arxiv.org/abs/1810.04805)) and compare it against rule-based models ([Hutto et al., 2014](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf))
 - Topic extraction: We will extract tweets of politics and sports with the most popular hashtags of both categories and a list of keywords.
 - Data visualization: To check if there is a correlation with retweetability for topics and sentiments, several visualizations will be made. These include histogram distributions for various topics and sentiments where number of retweets is on the x axis and number of tweets in on the y-axis. We will also develop graphs in which we visualize if the sentiment of tweets is affected by day of the week: for this each sentiment will have it's own line, and the day of week will be plotted on the x-axis and number of retweets on the y-axis. For this figure it is important that each sentiment dataset is the same size. 
--Data analysis: We will look at regression models to see if there is any correlation between topic or sentiment and the number of retweets.
+- Data analysis: We will look at regression models to see if there is any correlation between topic or sentiment and the number of retweets.
 
 Proposed timeline:
 - Week 1: Sentiment and topic extraction
