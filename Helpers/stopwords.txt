@@ -62,7 +62,6 @@ because
 as
 until
 while
-of
 at
 by
 for
