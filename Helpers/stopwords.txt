@@ -79,11 +79,8 @@ below
 to
 from
 up
-in
-out
 on
 off
-over
 under
 again
 further
@@ -110,11 +107,6 @@ s
 t
 m
 re
-uh
-oh
 can
 will
-just
-don
 should
-now
