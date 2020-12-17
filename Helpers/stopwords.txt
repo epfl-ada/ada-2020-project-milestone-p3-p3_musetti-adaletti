@@ -78,7 +78,6 @@ above
 below
 to
 from
-up
 on
 off
 under
