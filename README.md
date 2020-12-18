@@ -5,7 +5,7 @@ The popularity on Twitter it is based on how many people retweet your posts. We 
 The sentiment will be extracted via a sentiment analysis model. Also, the topic of the tweets and their sentiment will be analysed to understand which is the best combination to get more retweets. The dataset used contains over 1 million tweets.
 
 Research questions:
-- **RQ1.** Does the sentiment of the tweets (positive, neutral or negative) have an impact in the retweetability?
+- **RQ1.** Does the sentiment of the tweets (positive, neutral or negative) and the number of followers have an impact in the retweetability?
 - **RQ2.** The sentiment of the tweets are somehow related with the day of the weeks (ex Monday vs Friday) and the time of the day?
 - **RQ3.** The retweetability of the tweets are somehow related with the day of the weeks (ex Monday vs Friday) and the time of the day?
 - **RQ4.** Do other features of the text like the topic (e.g., sports or politics) impact on retweetability?
