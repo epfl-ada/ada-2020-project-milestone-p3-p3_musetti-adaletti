@@ -18,22 +18,20 @@ Methods:
 - Sentiment Analysis: We will implement a Sentiment Analysis approach based on contextual language models like BERT ([Devlin et al., 2019](https://arxiv.org/abs/1810.04805)) and compare it against rule-based models ([Hutto et al., 2014](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)). To make the analysis more robust and be confident that the tweets identified as positive are actually positive and the ones identified as negative are actually negative, we will look for an agreement of the two sentiment analyser. Wi will change the sentiment to neutral every time there is a disagreement between VADER and BERT.
 - Topic extraction: We will extract tweets of different topics (sports, politics, music, religion, health, cooking, fashion, family) with the most popular hashtags of both categories and a list of keywords.
 - Data visualization: To check if there is a correlation with retweetability for topics and sentiments, several visualizations will be made. These include histogram distributions for various topics and sentiments where number of retweets is on the x axis and number of tweets in on the y-axis. We will also develop graphs in which we visualize if the sentiment of tweets is affected by day of the week: for this each sentiment will have it's own line, and the day of week will be plotted on the x-axis and number of retweets on the y-axis. For this figure it is important that each sentiment dataset is the same size. 
-- Data analysis: We will look at regression models to see if there is any correlation between topic or sentiment and the number of retweets.
+- Data analysis: We will look at regression models to see if there is any correlation between retweeyability and other features such us number of follower and friends, the presence of hashtags and the sentiment of the tweets.
 
 Proposed timeline:
 - Week 1: Sentiment and topic extraction
-- Week 2: Investigating the correlation between extracted features (sentiment and topic) and retweetability. Ploting figures
-- Week 3: Report and wrap-up
+- Week 2: Investigating the correlation between extracted features (sentiment and topic) and retweetability. Plotting figures
+- Week 3: Data story
 - Deadline: 18th Dec
 
 Organization within the team:
 
 | Team member | Research Question | Task                                                                                    |
 |-------------|-------------------|-----------------------------------------------------------------------------------------|
-| Mattia      | RQ1, RQ2          | Implementing sentiment analysis model and investigating correlation with other features |
-| Cameron     | RQ1, RQ2          | Analyzing data and correlation of sentiment, time and retweetability                    |
-| Laura       | RQ1, RQ2          | Analyzing data and correlation of sentiment, time and retweetability                    |
-| Marcel      | RQ3               | Extracting tweets by topic (sports/politics), and analyzing them                        |
-
-Questions for TAs (optional):
+| Mattia      | RQ1, RQ2, RQ3     | Implementing sentiment analysis model and investigating correlation with other features |
+| Cameron     | RQ1, RQ2, RQ3     | Analyzing data and correlation of sentiment, time and retweetability                    |
+| Laura       | RQ1, RQ2, RQ3     | Analyzing data and correlation of sentiment, time and retweetability                    |
+| Marcel      | RQ4               | Extracting tweets by topic and analyzing them                                           |
 
