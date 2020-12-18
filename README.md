@@ -11,7 +11,7 @@ Research questions:
 - **RQ4.** Do other features of the text like the topic (e.g., sports or politics) impact on retweetability?
 
 Visual Data story:
-Beside the read me file, the notebook comes with a visual datastory meant to be seen on a personal computer. It has been tested with the internet browsers Google Chrome and Safari. You can check it out here [How to become a Twitter influencer](https://cameronsmith425.github.io/How-to-become-an-influencer/)
+Beside the read me file, the notebook comes with a visual datastory meant to be seen on a personal computer. It has been tested with the internet browsers Google Chrome and Safari. You can check it out here [How to become a Twitter influencer](https://cameronsmith425.github.io/How-to-become-an-influencer/).
 
 Proposed datasets:
 Inflated tweets from EgoTimelines.txt will have the text information, and EgoTimelines.txt contains retweets and further information.
