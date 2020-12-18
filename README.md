@@ -1,23 +1,22 @@
-Title: Analysis of retweetability given its sentiment and topic
+Title: How to become a Twitter influencer
 
 Abstract:
-Users can spread information in Twitter either by crafting new tweets or by using retweet mechanism to re-post the previously created tweets.
-We want to know what makes a post retweetable, therefore we will analyze characteristics of a tweet such as its sentiment and its topic.
-The sentiment will be extracted via a sentiment analysis model. Also, sport tweets retweetability will be compared to the one of politics tweets.
-The dataset used contains over 1 million tweets.
+The popularity on Twitter it is based on how many people retweet your posts. We want to know what makes a post retweetable and how one can maximize the likelihood of a tweet tobe retweeted, therefore we will analyze characteristics of a tweet such as its sentiment and its topic.
+The sentiment will be extracted via a sentiment analysis model. Also, the topic of the tweets and their sentiment will be analysed to understand which is the best combination to get more retweets. The dataset used contains over 1 million tweets.
 
 Research questions:
-- **RQ1.** Does the sentiment of the tweets (positive, neutral or negative) have an impact in the retweetability and number of followers?
-- **RQ2.** The sentiment of the tweets are somehow related with the day of the weeks (ex Monday vs Friday)?
-- **RQ3.** Do other features of the text like the topic (e.g., sports or politics) impact on retweetability?
+- **RQ1.** Does the sentiment of the tweets (positive, neutral or negative) have an impact in the retweetability?
+- **RQ2.** The sentiment of the tweets are somehow related with the day of the weeks (ex Monday vs Friday) and the time of the day?
+- **RQ3.** The retweetability of the tweets are somehow related with the day of the weeks (ex Monday vs Friday) and the time of the day?
+- **RQ4.** Do other features of the text like the topic (e.g., sports or politics) impact on retweetability?
 
 Proposed datasets:
 Inflated tweets from EgoTimelines.txt will have the text information, and EgoTimelines.txt contains retweets and further information.
 
 Methods:
-- Data collection: We are going to inflate the tweet_ids from EgoTimelines.txt to extract tweets text using [Twitter APIs](https://github.com/DocNow/hydrator).
-- Sentiment Analysis: We will implement a Sentiment Analysis approach based on contextual language models like BERT ([Devlin et al., 2019](https://arxiv.org/abs/1810.04805)) and compare it against rule-based models ([Hutto et al., 2014](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf))
-- Topic extraction: We will extract tweets of politics and sports with the most popular hashtags of both categories and a list of keywords.
+- Data collection: We are going to inflate the tweet_ids from EgoTimelines.txt to extract tweets text using [Twitter APIs](https://github.com/DocNow/hydrator). Only tweet IDs associated with English were kept. 
+- Sentiment Analysis: We will implement a Sentiment Analysis approach based on contextual language models like BERT ([Devlin et al., 2019](https://arxiv.org/abs/1810.04805)) and compare it against rule-based models ([Hutto et al., 2014](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)). To make the analysis more robust and be confident that the tweets identified as positive are actually positive and the ones identified as negative are actually negative, we will look for an agreement of the two sentiment analyser. Wi will change the sentiment to neutral every time there is a disagreement between VADER and BERT.
+- Topic extraction: We will extract tweets of different topics (sports, politics, music, religion, health, cooking, fashion, family) with the most popular hashtags of both categories and a list of keywords.
 - Data visualization: To check if there is a correlation with retweetability for topics and sentiments, several visualizations will be made. These include histogram distributions for various topics and sentiments where number of retweets is on the x axis and number of tweets in on the y-axis. We will also develop graphs in which we visualize if the sentiment of tweets is affected by day of the week: for this each sentiment will have it's own line, and the day of week will be plotted on the x-axis and number of retweets on the y-axis. For this figure it is important that each sentiment dataset is the same size. 
 - Data analysis: We will look at regression models to see if there is any correlation between topic or sentiment and the number of retweets.
 
